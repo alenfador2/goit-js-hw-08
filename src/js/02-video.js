@@ -10,7 +10,7 @@ player.on(
   }, 1000)
 );
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const time = localStorage.getItem('videoplayer-current-time');
   player.setCurrentTime(time);
 });
