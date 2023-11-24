@@ -12,5 +12,5 @@ player.on(
 
 window.addEventListener('DOMContentLoaded', () => {
   const time = localStorage.getItem('videoplayer-current-time');
-  player.setCurrentTime(time);
+  player.setCurrentTime();
 });
