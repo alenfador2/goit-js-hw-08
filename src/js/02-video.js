@@ -20,3 +20,4 @@ if(time !== null){
 } else{
   console.log(`current time is: ${null}`);
 }
+console.log(localStorage.getItem('videoplayer-current-time'));
