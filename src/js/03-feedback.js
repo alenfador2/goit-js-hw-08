@@ -21,7 +21,7 @@ if (localStorage.getItem(storageKey)) {
   currentMessage.value = formData.message;
 }
 
-input.addEventListener('submit', event => {
+input.addEventListener('submit', (event) => {
   event.preventDefault();
   console.log('formData:', formData);
   localStorage.removeItem(storageKey);
