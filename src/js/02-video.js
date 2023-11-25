@@ -11,10 +11,9 @@ player.on(
   }, 1000)
 );
 const time = localStorage.getItem('videoplayer-current-time');
-window.addEventListener('DOMContentLoaded', () => {
-  player.setCurrentTime(time);
-});
 
-if (time === null) {
-  player.setCurrentTime();
+if (time !== null) {
+  window.addEventListener('DOMContentLoaded', () => {
+    player.setCurrentTime(time);
+  });
 }
