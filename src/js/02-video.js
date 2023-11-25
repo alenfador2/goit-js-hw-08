@@ -16,11 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 if (time === null) {
-  player.on(
-    'timeupdate',
-    throttle(event => {
-      localStorage.setItem('videoplayer-current-time', event.seconds);
-    }, 1000)
-  );
-  player.setCurrentTime(localStorage.getItem('videoplayer-current-time')); 
+  location.reload();
+  player.setCurrentTime(time);
 }
