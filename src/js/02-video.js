@@ -11,12 +11,12 @@ player.on(
   }, 1000)
 );
 const time = localStorage.getItem('videoplayer-current-time');
-const stringTime = JSON.stringify(localStorage.getItem('videoplayer-current-time'));
+const parseTime = JSON.parse(localStorage.getItem('videoplayer-current-time'));
 window.addEventListener('DOMContentLoaded', () => {
   player.setCurrentTime(time);
 });
 
 if (time === null) {
   location.reload();
-  player.setCurrentTime(stringTime);
+  player.setCurrentTime(parseTime);
 }
