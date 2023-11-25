@@ -16,15 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 if (time === null) {
-  player.setCurrentTime(0.00).then(function(seconds) {
-
-}).catch(function(error) {
-    switch (error.name) {
-        case 'RangeError':
-            break;
-
-        default:
-            break;
-    }
-});
+  player.setCurrentTime(0.00)
 }
