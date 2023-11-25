@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 if (time === null) {
-  player.setCurrentTime(time).then(function(seconds) {
+  player.setCurrentTime(0.00).then(function(seconds) {
 
 }).catch(function(error) {
     switch (error.name) {
