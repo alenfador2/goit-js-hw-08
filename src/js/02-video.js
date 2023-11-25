@@ -16,5 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 if (time === null) {
-  player.setCurrentTime(0.00)
+  player.setCurrentTime();
 }
