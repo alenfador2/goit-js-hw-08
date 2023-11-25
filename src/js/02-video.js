@@ -15,9 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
   player.setCurrentTime(time);
 });
 
-if(time !== null){
-  console.log(`currentTime is: ${time}`);
-} else{
-  console.log(`current time is: ${null}`);
+if (time === null) {
+  function setTime(event) {
+    player.setCurrentTime(
+      localStorage.setItem('videoplayer-current-time', event.seconds)
+    );
+  }
 }
-console.log(localStorage.getItem('videoplayer-current-time'));
